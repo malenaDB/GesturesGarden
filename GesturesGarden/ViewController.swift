@@ -67,6 +67,25 @@ class ViewController: UIViewController
         hideWelcomeText()
     }
     
+     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?)
+     {
+        bigPink.font = UIFont.systemFont(ofSize: 90.0)
+        mediumPink.font = UIFont.systemFont(ofSize: 80.0)
+        smallPink.font = UIFont.systemFont(ofSize: 70.0)
+        
+        bigRed.font = UIFont.systemFont(ofSize: 90.0)
+        mediumRed.font = UIFont.systemFont(ofSize: 80.0)
+        smallRed.font = UIFont.systemFont(ofSize: 70.0)
+        
+        bigYellow.font = UIFont.systemFont(ofSize: 90.0)
+        mediumYellow.font = UIFont.systemFont(ofSize: 80.0)
+        smallYellow.font = UIFont.systemFont(ofSize: 70.0)
+        
+        bigMushroom.font = UIFont.systemFont(ofSize: 90.0)
+        mediumMushroom.font = UIFont.systemFont(ofSize: 80.0)
+        smallMushroom.font = UIFont.systemFont(ofSize: 70.0)
+     }
+    
     func hideWelcomeText()
     {
         welcomeLabel.text = ""
